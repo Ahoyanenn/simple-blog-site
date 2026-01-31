@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ジャンプスターターのおすすめと選び方｜失敗しないチェックポイント</title>
+  <meta name="description" content="ジャンプスターター（モバイルバッテリー型）の選び方を、失敗しやすいポイントから逆算して解説。必要なA数・容量・安全機能・端子・ケーブル長まで、初心者でも迷わない基準をまとめました。" />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.08);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --line:rgba(255,255,255,.12);
+      --accent:#7aa8ff;
+      --ok:#4ade80;
+      --ng:#fb7185;
+      --warn:#fbbf24;
+      --shadow: 0 16px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 14px;
+      --max: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(122,168,255,.18), transparent 55%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(99,102,241,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:50;
+      background: rgba(11,16,32,.72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 14px 16px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight: 800;
+      letter-spacing:.02em;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(122,168,255,1), rgba(168,85,247,1));
+      box-shadow: 0 14px 40px rgba(122,168,255,.20);
+    }
+    .navlinks{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .chip{
+      padding:8px 12px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 13px;
+    }
+    .chip:hover{background: rgba(255,255,255,.08)}
+    main{max-width: var(--max); margin: 0 auto; padding: 22px 16px 60px}
+    .hero{
+      margin-top: 14px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .kicker{color:var(--muted); font-size: 14px}
+    h1{
+      margin: 8px 0 10px;
+      font-size: clamp(24px, 5vw, 40px);
+      letter-spacing:.01em;
+      line-height:1.25;
+    }
+    .hero p{margin: 10px 0 0; color: var(--muted)}
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .card{
+      padding: 18px;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+    .card h2{margin: 0 0 8px; font-size: 18px}
+    .card h3{margin: 14px 0 6px; font-size: 16px}
+    .muted{color:var(--muted)}
+    .check{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style:none;
+      display:grid;
+      gap: 10px;
+    }
+    .check li{
+      display:flex; gap:10px; align-items:flex-start;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .badge{
+      min-width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      display:grid; place-items:center;
+      font-weight: 900;
+      font-size: 14px;
+      background: rgba(122,168,255,.18);
+      border: 1px solid rgba(122,168,255,.26);
+      color: rgba(255,255,255,.95);
+      margin-top: 1px;
+    }
+    .kbd{
+      display:inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .callout{
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+    }
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow:hidden;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+    }
+    .table th,.table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    .table th{background: rgba(255,255,255,.06); text-align:left}
+    .pill{
+      display:inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+      margin-right: 6px;
+      margin-top: 4px;
+    }
+    .hr{height:1px; background: rgba(255,255,255,.10); margin: 14px 0}
+    .recommend{
+      display:grid; gap: 10px;
+      margin-top: 10px;
+    }
+    .rec{
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+    }
+    .rec strong{display:block}
+    .rec .meta{color:var(--muted); font-size: 13px}
+    .rec .cta{
+      margin-top: 8px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(122,168,255,.35);
+      background: rgba(122,168,255,.14);
+      color: rgba(255,255,255,.92);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn:hover{background: rgba(122,168,255,.22); text-decoration:none}
+    .btn2{
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.86);
+    }
+    .btn2:hover{background: rgba(255,255,255,.10)}
+    footer{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 16px 30px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .note{font-size: 12px; color: rgba(255,255,255,.58)}
+    .small{font-size: 13px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>車トラブル対策ノート</div>
+    </div>
+    <div class="navlinks">
+      <a class="chip" href="../index.html">ホーム</a>
+      <a class="chip" href="../categories.html">カテゴリ一覧</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="kicker">ジャンプスターター（モバイル型）入門</div>
+    <h1>ジャンプスターターのおすすめと選び方<br/>失敗しないチェックポイント</h1>
+    <p>
+      「買ったのに回らん…」はだいたい <span class="kbd">A数不足</span> と <span class="kbd">ケーブル/端子の相性</span> が原因。
+      この記事は<strong>“必要条件だけ”</strong>に絞って、迷わず選べる基準をまとめます。
+    </p>
+  </section>
+
+  <div class="grid">
+
+    <section class="card">
+      <h2>まず結論：選び方はこの5つだけ</h2>
+      <ul class="check">
+        <li><span class="badge">1</span><div><strong>ピーク電流（A）</strong>：ガソリン車/ディーゼルで必要が変わる</div></li>
+        <li><span class="badge">2</span><div><strong>端子とケーブル</strong>：クランプ形状・長さ・USB-Cの有無</div></li>
+        <li><span class="badge">3</span><div><strong>安全機能</strong>：逆接続/過電流/温度/スパーク防止は必須</div></li>
+        <li><span class="badge">4</span><div><strong>容量（mAh）は“おまけ”</strong>：大きいほど良いが、A数が優先</div></li>
+        <li><span class="badge">5</span><div><strong>保管性</strong>：耐熱・耐寒、ケース、バッテリー残量表示</div></li>
+      </ul>
+      <div class="callout">
+        💡 迷ったら：<strong>「ピーク2000A以上」＋「USB-C入力」＋「安全機能フル」</strong>を選ぶと失敗が少ないです。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>チェック①：ピーク電流（A）はどれを選ぶ？</h2>
+      <p class="muted">目安。メーカー表記は強めに書かれてることがあるので、少し余裕を持つと安心。</p>
+
+      <table class="table">
+        <thead>
+          <tr><th>車の目安</th><th>ピーク電流の目安</th><th>ひとこと</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>軽/コンパクト（〜1.5L）</td>
+            <td><span class="pill">1500A〜2000A</span></td>
+            <td>迷うなら2000A寄り</td>
+          </tr>
+          <tr>
+            <td>普通車（〜2.5L）</td>
+            <td><span class="pill">2000A〜3000A</span></td>
+            <td>寒冷地や年数経過車は上を推奨</td>
+          </tr>
+          <tr>
+            <td>大排気量/ディーゼル</td>
+            <td><span class="pill">3000A〜4000A</span></td>
+            <td>“余裕が正義”。ケーブル品質も重要</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        ⚠️ <strong>mAhが大きくてもAが弱いと始動できません。</strong><br/>
+        まずA、次に端子と安全機能、最後にmAh。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>チェック②：端子・ケーブルで失敗しがち</h2>
+      <ul class="check">
+        <li><span class="badge">✔</span><div><strong>クランプ（挟むやつ）のケーブルが短すぎる</strong><div class="muted small">ボンネット内で取り回しが悪いと地味にストレス。できれば長め。</div></div></li>
+        <li><span class="badge">✔</span><div><strong>USB-C入力がない</strong><div class="muted small">充電が遅い/面倒で使わなくなる。USB-C入力対応が楽。</div></div></li>
+        <li><span class="badge">✔</span><div><strong>車以外に使うならUSB出力も見る</strong><div class="muted small">スマホ充電やライト目的ならUSB出力の種類も要確認。</div></div></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>チェック③：安全機能は“全部入り”を選ぶ</h2>
+      <p class="muted">ここ削ると危ない。最低限これ。</p>
+      <div>
+        <span class="pill">逆接続保護</span>
+        <span class="pill">過電流保護</span>
+        <span class="pill">過充電/過放電保護</span>
+        <span class="pill">温度保護</span>
+        <span class="pill">スパーク防止</span>
+      </div>
+      <div class="callout">
+        ✅「安全機能が多いほど、初心者でも失敗しにくい」<br/>
+        逆に<strong>“説明が薄い商品”</strong>は避けた方が無難。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>チェック④：容量（mAh）はどう見る？</h2>
+      <p class="muted">
+        mAhは「何回トライできるか」「スマホも充電できるか」には効くけど、
+        <strong>エンジンを回す瞬間はAが主役</strong>です。
+      </p>
+
+      <div class="hr"></div>
+
+      <h3>おすすめの考え方</h3>
+      <ul class="check">
+        <li><span class="badge">A</span><div><strong>まずピークAを満たす</strong><div class="muted small">必要ライン未満なら容量が大きくても意味が薄い</div></div></li>
+        <li><span class="badge">B</span><div><strong>次に容量は「大きめ」</strong><div class="muted small">保険として余裕があると安心</div></div></li>
+        <li><span class="badge">C</span><div><strong>最後にサイズ</strong><div class="muted small">グローブボックス/トランクで邪魔にならないか</div></div></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>おすすめの買い方（迷う人向け）</h2>
+      <p class="muted">用途別に“型”を決めると一気に楽になります。</p>
+
+      <div class="recommend">
+        <div class="rec">
+          <strong>とにかく失敗したくない（万能）</strong>
+          <div class="meta">ピーク2000A〜3000A / USB-C入力 / 安全機能フル / ケース付き</div>
+          <div class="cta">
+            <a class="btn btn2" href="#rakuten-slot">楽天で候補を見る</a>
+          </div>
+        </div>
+
+        <div class="rec">
+          <strong>軽・コンパクト車メイン（価格も抑えたい）</strong>
+          <div class="meta">ピーク1500A〜2000A / 安全機能フル / 端子の相性優先</div>
+          <div class="cta">
+            <a class="btn btn2" href="#rakuten-slot">楽天で候補を見る</a>
+          </div>
+        </div>
+
+        <div class="rec">
+          <strong>寒冷地・年数経過・大排気量（余裕重視）</strong>
+          <div class="meta">ピーク3000A以上 / ケーブル品質重視 / 収納ケース&耐熱・耐寒</div>
+          <div class="cta">
+            <a class="btn btn2" href="#rakuten-slot">楽天で候補を見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        ✅ ここまで満たせば、あとは<strong>見た目と価格</strong>で決めてOK。<br/>
+        「どれ買ったらいいか分からん」は“条件を先に固定”が勝ち筋。
+      </div>
+    </section>
+
+    <section class="card" id="rakuten-slot">
+      <h2>楽天リンク差し込み（ここに貼る）</h2>
+      <p class="muted">
+        楽天アフィの画面で <strong>「リンクタイプ：テキストのみ」か「短縮URL」</strong> を選んで、
+        そのURLを下のボタンに差し替えるのが一番ラクです。
+      </p>
+
+      <div class="callout">
+        <strong>やること：</strong><br/>
+        ① 楽天アフィで「テキストのみ」または「短縮URL」<br/>
+        ② コピーしたURLを、この下の <span class="kbd">href="ここ"</span> に貼る
+      </div>
+
+      <div class="cta" style="margin-top:12px;">
+        <a class="btn" href="https://example.com" target="_blank" rel="nofollow sponsored noopener">
+          楽天でジャンプスターター候補を見る
+        </a>
+        <a class="btn btn2" href="https://example.com" target="_blank" rel="nofollow sponsored noopener">
+          2000A以上で絞り込む
+        </a>
+      </div>
+
+      <p class="note" style="margin-top:10px;">
+        ※リンクは <span class="kbd">rel="nofollow sponsored noopener"</span> を付けておくと安全です。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>よくある質問</h2>
+
+      <h3>Q. そもそも使い方が不安</h3>
+      <p class="muted">
+        基本は「＋を先に、−は金属部分に」などルールがあります。<br/>
+        この記事の次に<strong>“使い方・注意点”</strong>の記事を作ると、サイトとして強くなります。
+      </p>
+
+      <h3>Q. どれくらいの頻度で充電すればいい？</h3>
+      <p class="muted">
+        置きっぱなしだと減ります。<strong>月1回チェック</strong>くらいが現実的。<br/>
+        （機種によって自己放電の差があるので、残量表示があると便利）
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="small">© 2026 車トラブル対策ノート</div>
+  <div class="note">本ページにはアフィリエイトリンク（広告）が含まれる場合があります。</div>
+</footer>
+
+</body>
+</html>
