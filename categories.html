@@ -1,74 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>カテゴリ一覧 - 収益化ブログ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>カテゴリ一覧</title>
+<style>
+body{margin:0;background:#0f172a;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;}
+header{padding:20px;text-align:center;background:#111827;font-size:22px;font-weight:700;}
+.container{max-width:960px;margin:0 auto;padding:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px;}
+.card{background:#1e293b;border-radius:16px;padding:20px;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:transform .1s;}
+.card:hover{transform:translateY(-2px);}
+.card a{text-decoration:none;color:#38bdf8;font-weight:700;font-size:18px;}
+.card p{margin:4px 0 0;color:#94a3b8;font-size:14px;}
+footer{text-align:center;margin-top:40px;color:#94a3b8;font-size:12px;}
+</style>
 </head>
 <body>
-  <header>
-    <h1>カテゴリ一覧</h1>
-    <nav>
-      <a href="index.html">ホーム</a>
-    </nav>
-  </header>
-  <main>
-    <ul>
-      <li><a href="#">バッテリー上がり 対処法</a></li>
-      <li><a href="#">ジャンプスターター おすすめ</a></li>
-      <li><a href="#">ブースターケーブル 使い方</a></li>
-      <li><a href="#">モバイルジャンプスターター 比較</a></li>
-      <li><a href="#">バッテリー寿命 見分け方</a></li>
-      <li><a href="#">バッテリー充電器 おすすめ</a></li>
-      <li><a href="#">バッテリーテスター おすすめ</a></li>
-      <li><a href="#">アイドリングストップ車 バッテリー</a></li>
-      <li><a href="#">寒冷地 バッテリー対策</a></li>
-      <li><a href="#">ハイブリッド車 バッテリー交換</a></li>
-      <li><a href="#">デジタルマルチメーター おすすめ</a></li>
-      <li><a href="#">クランプメーター おすすめ</a></li>
-      <li><a href="#">検電テスター おすすめ</a></li>
-      <li><a href="#">絶縁抵抗計 おすすめ</a></li>
-      <li><a href="#">電圧チェッカー おすすめ</a></li>
-      <li><a href="#">車用OBD2 診断機</a></li>
-      <li><a href="#">トルクレンチ おすすめ</a></li>
-      <li><a href="#">電動インパクトレンチ 比較</a></li>
-      <li><a href="#">エアゲージ 精度 比較</a></li>
-      <li><a href="#">レーザー距離計 おすすめ</a></li>
-      <li><a href="#">車載インバーター おすすめ</a></li>
-      <li><a href="#">ポータブル電源 車中泊</a></li>
-      <li><a href="#">シガーソケット 増設</a></li>
-      <li><a href="#">ドライブレコーダー 駐車監視</a></li>
-      <li><a href="#">非常用脱出ハンマー</a></li>
-      <li><a href="#">タイヤ空気入れ 電動</a></li>
-      <li><a href="#">パンク修理キット</a></li>
-      <li><a href="#">けん引ロープ おすすめ</a></li>
-      <li><a href="#">車用消火器</a></li>
-      <li><a href="#">三角表示板 LED</a></li>
-      <li><a href="#">エンジンかからない 原因</a></li>
-      <li><a href="#">セルが回らない 対処</a></li>
-      <li><a href="#">ヒューズ切れ 見分け方</a></li>
-      <li><a href="#">オルタネーター 故障 症状</a></li>
-      <li><a href="#">バッテリー警告灯 原因</a></li>
-      <li><a href="#">電装系 トラブル 事例</a></li>
-      <li><a href="#">アース不良 症状</a></li>
-      <li><a href="#">ヘッドライト つかない 原因</a></li>
-      <li><a href="#">ナビ 電源 入らない</a></li>
-      <li><a href="#">ETC 電源 入らない</a></li>
-      <li><a href="#">防災 ポータブル電源 おすすめ</a></li>
-      <li><a href="#">ソーラーパネル 充電器 比較</a></li>
-      <li><a href="#">車中泊 電源 確保</a></li>
-      <li><a href="#">停電対策 グッズ</a></li>
-      <li><a href="#">発電機 家庭用 おすすめ</a></li>
-      <li><a href="#">延長コード 業務用</a></li>
-      <li><a href="#">防水コンセント 屋外</a></li>
-      <li><a href="#">仮設電源 ボックス</a></li>
-      <li><a href="#">電工ドラム おすすめ</a></li>
-      <li><a href="#">漏電ブレーカー 携帯型</a></li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2026 収益化ブログ</p>
-  </footer>
+<header>カテゴリ一覧</header>
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <a href="jumpstarter.html">ジャンプスターター</a>
+      <p>おすすめ・選び方</p>
+    </div>
+    <div class="card">
+      <a href="booster.html">ブースターケーブル</a>
+      <p>使い方・注意点</p>
+    </div>
+    <div class="card">
+      <a href="battery.html">バッテリー</a>
+      <p>寿命・点検</p>
+    </div>
+    <!-- 必要に応じてカードを追加してください -->
+  </div>
+</div>
+<footer>© 2026 Battery Guide</footer>
 </body>
 </html>
