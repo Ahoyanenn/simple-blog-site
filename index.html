@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>収益化ブログ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>収益化ブログ</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>収益化ブログ</h1>
-    <nav>
-      <a href="categories.html">カテゴリ一覧</a>
-    </nav>
-  </header>
-  <main>
-    <p>このサイトは収益化を目的としたブログのサンプルです。</p>
-    <p>カテゴリ一覧ページから記事を選んでください。</p>
-  </main>
-  <footer>
-    <p>&copy; 2026 収益化ブログ</p>
-  </footer>
+<header class="site-header">
+  <h1>収益化ブログ</h1>
+</header>
+
+<main class="container">
+  <section class="intro">
+    <p>このサイトは現代的なデザインで収益化を目的としたブログです。カテゴリから興味のある分野を選んでください。</p>
+  </section>
+
+  <!-- AdSense ad below intro -->
+  <div class="ad-block">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <section id="categories" class="categories-grid">
+    <!-- categories will be inserted here by JS -->
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 収益化ブログ</p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+// generate categories list
+const categoriesContainer = document.getElementById('categories');
+Object.keys(data).forEach(category => {
+  const card = document.createElement('a');
+  card.className = 'category-card';
+  card.href = 'category.html?category=' + encodeURIComponent(category);
+  card.innerText = category;
+  categoriesContainer.appendChild(card);
+});
+</script>
 </body>
 </html>
