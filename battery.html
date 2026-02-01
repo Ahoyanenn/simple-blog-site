@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>バッテリーTOP10｜寿命サインと交換タイミング</title>
+  <meta name="description" content="車用バッテリーのTOP10を用途別に紹介。寿命の見極め方、比較表、FAQまでまとめた実用ガイド。" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.08);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --line:rgba(255,255,255,.12);
+      --accent:#7aa8ff;
+      --shadow: 0 16px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 14px;
+      --max: 1000px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(122,168,255,.18), transparent 55%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(99,102,241,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:50;
+      background: rgba(11,16,32,.72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 14px 16px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight: 800;
+      letter-spacing:.02em;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(122,168,255,1), rgba(168,85,247,1));
+      box-shadow: 0 14px 40px rgba(122,168,255,.20);
+    }
+    .navlinks{display:flex; gap:10px; flex-wrap:wrap}
+    .chip{
+      padding:8px 12px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 13px;
+    }
+    .chip:hover{background: rgba(255,255,255,.08)}
+    main{max-width: var(--max); margin: 0 auto; padding: 22px 16px 60px}
+    .hero{
+      margin-top: 14px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .kicker{color:var(--muted); font-size: 14px}
+    h1{
+      margin: 8px 0 10px;
+      font-size: clamp(24px, 5vw, 40px);
+      letter-spacing:.01em;
+      line-height:1.25;
+    }
+    .hero p{margin: 10px 0 0; color: var(--muted)}
+    .card{
+      margin-top: 14px;
+      padding: 18px;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+    .card h2{margin: 0 0 8px; font-size: 18px}
+    .muted{color:var(--muted)}
+    .ads{
+      margin-top:14px;
+      padding:14px;
+      border-radius:14px;
+      border:1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .toplist{display:grid; gap:12px; margin: 12px 0 0}
+    .topitem{
+      padding:12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      display:grid;
+      gap:8px;
+    }
+    .topitem strong{font-size:16px}
+    .tags{display:flex; gap:6px; flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .cta{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(122,168,255,.35);
+      background: rgba(122,168,255,.14);
+      color: rgba(255,255,255,.92);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn.secondary{
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.86);
+    }
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow:hidden;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+    }
+    .table th,.table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    .table th{background: rgba(255,255,255,.06); text-align:left}
+    .faq h3{margin:12px 0 6px}
+    .page-nav{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    footer{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 16px 30px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+  </style>
+</head>
+<body id="top">
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>バッテリー上がり完全対策ガイド</div>
+    </div>
+    <div class="navlinks">
+      <a class="chip" href="index.html">ホーム</a>
+      <a class="chip" href="categories.html">カテゴリ一覧</a>
+      <a class="chip" href="jumpstarter.html">ジャンプスターターTOP10</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="kicker">バッテリーTOP10</div>
+    <h1>寿命サインと交換タイミングが分かるおすすめ10選</h1>
+    <p>
+      バッテリーは「突然死」する前にサインがあります。
+      交換時期の目安と選び方を合わせて、安心して使える10選を紹介します。
+    </p>
+  </section>
+
+  <!-- ADSENSE: BATTERY HERO -->
+  <div class="ads">
+    <strong>広告枠（バッテリーTOP10）</strong><br/>
+    ここに広告ユニットを後から差し込めます。
+  </div>
+
+  <section class="card">
+    <h2>TOP10 リスト</h2>
+    <p class="muted">用途別・車格別におすすめ理由を記載。</p>
+    <div class="toplist">
+      <div class="topitem">
+        <strong>1位：万能スタンダードモデル</strong>
+        <div class="muted">普通車で迷ったらこれ。性能と価格のバランスが良い。</div>
+        <div class="tags">
+          <span class="pill">標準タイプ</span><span class="pill">コスパ</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>2位：寒冷地対応モデル</strong>
+        <div class="muted">冬場の始動性を重視する人向け。</div>
+        <div class="tags">
+          <span class="pill">寒冷地</span><span class="pill">始動性</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>3位：大容量ロングライフ</strong>
+        <div class="muted">アイドリングストップ車や電装品が多い車向け。</div>
+        <div class="tags">
+          <span class="pill">大容量</span><span class="pill">長寿命</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>4位：軽自動車専用</strong>
+        <div class="muted">軽量でコスパ重視。適合サイズは必ず確認。</div>
+        <div class="tags">
+          <span class="pill">軽自動車</span><span class="pill">低価格</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>5位：アイドリングストップ対応</strong>
+        <div class="muted">回復力の高いモデルで寿命を確保。</div>
+        <div class="tags">
+          <span class="pill">IS対応</span><span class="pill">高耐久</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>6位：長期保証付きモデル</strong>
+        <div class="muted">安心感を重視する人向け。</div>
+        <div class="tags">
+          <span class="pill">保証付き</span><span class="pill">安心</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>7位：メンテナンスフリー</strong>
+        <div class="muted">点検手間を減らしたい人向け。</div>
+        <div class="tags">
+          <span class="pill">メンテフリー</span><span class="pill">初心者向け</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>8位：高出力スターター向け</strong>
+        <div class="muted">大型車やディーゼル車の始動性を重視。</div>
+        <div class="tags">
+          <span class="pill">高出力</span><span class="pill">大排気量</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>9位：コスパ重視エントリー</strong>
+        <div class="muted">短期で乗り換え予定ならコスパ優先。</div>
+        <div class="tags">
+          <span class="pill">低価格</span><span class="pill">短期</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>10位：バランス型スタートパック</strong>
+        <div class="muted">初めての交換で迷う人向け。</div>
+        <div class="tags">
+          <span class="pill">初めて向け</span><span class="pill">標準</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>比較表（用途別にざっくり）</h2>
+    <table class="table">
+      <thead>
+        <tr><th>タイプ</th><th>向いている人</th><th>メリット</th><th>注意点</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>寒冷地対応</td>
+          <td>冬場の始動性重視</td>
+          <td>低温でも性能が落ちにくい</td>
+          <td>価格はやや高め</td>
+        </tr>
+        <tr>
+          <td>IS対応</td>
+          <td>アイドリングストップ車</td>
+          <td>充放電に強い</td>
+          <td>適合型番の確認が必須</td>
+        </tr>
+        <tr>
+          <td>標準タイプ</td>
+          <td>普通車</td>
+          <td>コスパが良い</td>
+          <td>寿命目安は3〜5年</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>寿命サインのチェック</h2>
+    <ul class="muted">
+      <li>セルの回りが重い・ライトが暗い</li>
+      <li>アイドリングストップが頻繁に解除される</li>
+      <li>使用年数が3年以上経っている</li>
+    </ul>
+  </section>
+
+  <section class="card faq">
+    <h2>よくある質問</h2>
+    <h3>Q. バッテリーは何年で交換？</h3>
+    <p class="muted">目安は3〜5年。使用環境と走行距離で前後します。</p>
+    <h3>Q. 交換時期が分からない</h3>
+    <p class="muted">セルの回りが弱い、ライトが暗いなどがサインです。</p>
+    <h3>Q. サイズが合えばどれでも良い？</h3>
+    <p class="muted">適合型番や端子位置が重要。購入前に車種適合表を確認してください。</p>
+  </section>
+
+  <section class="card">
+    <h2>関連カテゴリ</h2>
+    <div class="page-nav">
+      <a class="chip" href="jumpstarter.html">ジャンプスターターTOP10</a>
+      <a class="chip" href="booster.html">ブースターケーブルTOP10</a>
+    </div>
+  </section>
+
+  <!-- ADSENSE: BATTERY BOTTOM -->
+  <div class="ads">
+    <strong>広告枠（ページ下部）</strong><br/>
+    コンテンツの読了後に表示する想定です。
+  </div>
+
+  <div class="page-nav">
+    <a class="chip" href="booster.html">前のカテゴリへ</a>
+    <a class="chip" href="index.html">トップへ戻る</a>
+  </div>
+</main>
+
+<footer>
+  <div>© 2026 収益化ブログ</div>
+</footer>
+</body>
+</html>

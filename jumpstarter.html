@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ジャンプスターターTOP10｜用途別おすすめと比較</title>
+  <meta name="description" content="ジャンプスターターのTOP10を用途別に紹介。選び方の基準、比較表、FAQまでまとめた保存版。" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.08);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --line:rgba(255,255,255,.12);
+      --accent:#7aa8ff;
+      --shadow: 0 16px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 14px;
+      --max: 1000px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(122,168,255,.18), transparent 55%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(99,102,241,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:50;
+      background: rgba(11,16,32,.72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 14px 16px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight: 800;
+      letter-spacing:.02em;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(122,168,255,1), rgba(168,85,247,1));
+      box-shadow: 0 14px 40px rgba(122,168,255,.20);
+    }
+    .navlinks{display:flex; gap:10px; flex-wrap:wrap}
+    .chip{
+      padding:8px 12px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 13px;
+    }
+    .chip:hover{background: rgba(255,255,255,.08)}
+    main{max-width: var(--max); margin: 0 auto; padding: 22px 16px 60px}
+    .hero{
+      margin-top: 14px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .kicker{color:var(--muted); font-size: 14px}
+    h1{
+      margin: 8px 0 10px;
+      font-size: clamp(24px, 5vw, 40px);
+      letter-spacing:.01em;
+      line-height:1.25;
+    }
+    .hero p{margin: 10px 0 0; color: var(--muted)}
+    .card{
+      margin-top: 14px;
+      padding: 18px;
+      border-radius: var(--radius2);
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+    .card h2{margin: 0 0 8px; font-size: 18px}
+    .muted{color:var(--muted)}
+    .ads{
+      margin-top:14px;
+      padding:14px;
+      border-radius:14px;
+      border:1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .toplist{display:grid; gap:12px; margin: 12px 0 0}
+    .topitem{
+      padding:12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      display:grid;
+      gap:8px;
+    }
+    .topitem strong{font-size:16px}
+    .tags{display:flex; gap:6px; flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .cta{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(122,168,255,.35);
+      background: rgba(122,168,255,.14);
+      color: rgba(255,255,255,.92);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn.secondary{
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.86);
+    }
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow:hidden;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+    }
+    .table th,.table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    .table th{background: rgba(255,255,255,.06); text-align:left}
+    .faq h3{margin:12px 0 6px}
+    .page-nav{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    footer{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 16px 30px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+  </style>
+</head>
+<body id="top">
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>バッテリー上がり完全対策ガイド</div>
+    </div>
+    <div class="navlinks">
+      <a class="chip" href="index.html">ホーム</a>
+      <a class="chip" href="categories.html">カテゴリ一覧</a>
+      <a class="chip" href="posts/jumpstarter-choose.html">選び方ガイド</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="kicker">ジャンプスターターTOP10</div>
+    <h1>用途別おすすめ10選と比較ポイント</h1>
+    <p>
+      「どれ買えばいいか分からない」を解消するため、用途別にTOP10を整理しました。
+      必要なA数・安全機能・サイズ感まで把握できるようにまとめています。
+    </p>
+  </section>
+
+  <!-- ADSENSE: JUMPSTARTER HERO -->
+  <div class="ads">
+    <strong>広告枠（ジャンプスターターTOP10）</strong><br/>
+    ここにAdSenseなどの広告ユニットを差し込めます。
+  </div>
+
+  <section class="card">
+    <h2>TOP10 リスト</h2>
+    <p class="muted">用途別におすすめ理由を添えています。リンクは後から差し替えOK。</p>
+    <div class="toplist">
+      <div class="topitem">
+        <strong>1位：オールラウンダー2000A</strong>
+        <div class="muted">軽〜普通車向けで失敗が少ない万能モデル。</div>
+        <div class="tags">
+          <span class="pill">2000A以上</span><span class="pill">USB-C</span><span class="pill">安全機能フル</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>2位：大排気量対応3000A</strong>
+        <div class="muted">寒冷地・年数経過車でも余裕を持たせたい人向け。</div>
+        <div class="tags">
+          <span class="pill">3000A</span><span class="pill">ケーブル太め</span><span class="pill">耐寒</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>3位：超コンパクト1500A</strong>
+        <div class="muted">軽・コンパクト車限定なら持ち運びやすさ重視。</div>
+        <div class="tags">
+          <span class="pill">1500A</span><span class="pill">軽量</span><span class="pill">収納性</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>4位：USB機能充実モデル</strong>
+        <div class="muted">スマホ充電やライトを重視する防災兼用タイプ。</div>
+        <div class="tags">
+          <span class="pill">USB多口</span><span class="pill">ライト</span><span class="pill">PSE</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>5位：コスパ重視モデル</strong>
+        <div class="muted">必要条件を満たしつつ価格を抑えたい人向け。</div>
+        <div class="tags">
+          <span class="pill">コスパ</span><span class="pill">最低限安全機能</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>6位：ディーゼル対応強化</strong>
+        <div class="muted">トルクが必要な車向けにピークを重視。</div>
+        <div class="tags">
+          <span class="pill">3500A</span><span class="pill">大排気量</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>7位：スタンバイ長持ち</strong>
+        <div class="muted">保管しっぱなしでも安心な自己放電対策モデル。</div>
+        <div class="tags">
+          <span class="pill">低自己放電</span><span class="pill">残量表示</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>8位：ケーブル長めモデル</strong>
+        <div class="muted">ボンネット内の取り回しが楽な長めケーブル。</div>
+        <div class="tags">
+          <span class="pill">ケーブル長</span><span class="pill">扱いやすい</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>9位：防水・防塵重視</strong>
+        <div class="muted">アウトドアや緊急用途で環境耐性を求める人向け。</div>
+        <div class="tags">
+          <span class="pill">IP規格</span><span class="pill">タフ設計</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+      <div class="topitem">
+        <strong>10位：マルチツール型</strong>
+        <div class="muted">空気入れやライト付きの多機能タイプ。</div>
+        <div class="tags">
+          <span class="pill">多機能</span><span class="pill">防災</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://example.com/rakuten" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+          <a class="btn secondary" href="https://example.com/amazon" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>比較表（主要モデルだけざっくり比較）</h2>
+    <table class="table">
+      <thead>
+        <tr><th>タイプ</th><th>目安A数</th><th>向いている人</th><th>注意点</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>万能2000A</td>
+          <td>2000A〜2500A</td>
+          <td>初めて購入する人</td>
+          <td>サイズはやや大きめ</td>
+        </tr>
+        <tr>
+          <td>高出力3000A</td>
+          <td>3000A〜4000A</td>
+          <td>寒冷地・大排気量</td>
+          <td>価格が上がりやすい</td>
+        </tr>
+        <tr>
+          <td>コンパクト1500A</td>
+          <td>1500A〜2000A</td>
+          <td>軽・コンパクト車</td>
+          <td>余裕は少なめ</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>選び方の超要約</h2>
+    <p class="muted">失敗しない最低ラインは「A数」「安全機能」「ケーブル品質」です。</p>
+    <ul class="muted">
+      <li>普通車ならピーク2000A以上を目安にする</li>
+      <li>逆接続・過電流・温度保護は必須</li>
+      <li>ケーブルが細すぎる製品は避ける</li>
+    </ul>
+  </section>
+
+  <section class="card faq">
+    <h2>よくある質問</h2>
+    <h3>Q. mAhが大きいほど良い？</h3>
+    <p class="muted">始動性能はA数が優先。mAhは回数と保険と考えるのが正解です。</p>
+    <h3>Q. 月1回は本当に必要？</h3>
+    <p class="muted">自己放電があるため、月1回の残量チェックがおすすめ。</p>
+    <h3>Q. ブースターケーブルと迷う</h3>
+    <p class="muted">自力で完結したいならジャンプスターター、誰かに助けてもらえるならケーブルも有効。</p>
+  </section>
+
+  <section class="card">
+    <h2>関連カテゴリ</h2>
+    <div class="page-nav">
+      <a class="chip" href="booster.html">ブースターケーブルTOP10</a>
+      <a class="chip" href="battery.html">バッテリーTOP10</a>
+    </div>
+  </section>
+
+  <!-- ADSENSE: JUMPSTARTER BOTTOM -->
+  <div class="ads">
+    <strong>広告枠（ページ下部）</strong><br/>
+    クリック率を見ながら最終配置を調整できます。
+  </div>
+
+  <div class="page-nav">
+    <a class="chip" href="index.html">トップへ戻る</a>
+    <a class="chip" href="booster.html">次のカテゴリへ</a>
+  </div>
+</main>
+
+<footer>
+  <div>© 2026 収益化ブログ</div>
+</footer>
+</body>
+</html>
