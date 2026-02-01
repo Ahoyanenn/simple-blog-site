@@ -47,14 +47,6 @@
       box-shadow:0 10px 30px rgba(106,228,255,.22);
     }
     .title{font-size:20px; font-weight:800; letter-spacing:.02em}
-    nav{display:flex; gap:10px; flex-wrap:wrap}
-    .pill{
-      padding:10px 12px; border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-    }
     .hero{
       margin-top:10px;
       padding:20px;
@@ -66,12 +58,9 @@
     .hero p{margin:0; color:var(--muted); line-height:1.8}
     .grid{
       display:grid;
-      grid-template-columns: 1.1fr .9fr;
+      grid-template-columns: 1fr;
       gap:16px;
       margin-top:16px;
-    }
-    @media (max-width: 860px){
-      .grid{grid-template-columns:1fr}
     }
     .card{
       padding:18px;
@@ -81,17 +70,6 @@
     }
     .card h2{margin:0 0 10px; font-size:16px}
     .muted{color:var(--muted); font-size:14px; line-height:1.8}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:8px;
-      padding:12px 14px;
-      border-radius:14px;
-      background:linear-gradient(135deg, rgba(106,228,255,.22), rgba(167,139,250,.22));
-      border:1px solid rgba(255,255,255,.18);
-      font-weight:700;
-      margin-top:12px;
-      width:100%;
-    }
     .list{
       display:grid; gap:10px; margin-top:12px;
     }
@@ -104,16 +82,6 @@
     }
     .item b{font-size:14px}
     .item span{color:var(--muted); font-size:12px}
-    .ads{
-      margin-top:14px;
-      padding:14px;
-      border-radius:14px;
-      border:1px dashed rgba(255,255,255,.25);
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.7;
-      background:rgba(0,0,0,.10);
-    }
     footer{
       margin-top:28px;
       color:var(--muted);
@@ -130,10 +98,6 @@
         <div class="logo" aria-hidden="true"></div>
         <div class="title">バッテリー上がり完全対策ガイド</div>
       </div>
-      <nav>
-  <a class="pill" href="index.html">ホーム</a>
-  <a class="pill" href="categories.html">カテゴリ一覧</a>
-</nav>
     </header>
 
     <section class="hero">
@@ -145,23 +109,7 @@
 
     <section class="grid">
       <div class="card">
-        <h2>人気カテゴリ</h2>
-        <div class="list">
-          <a class="item" href="categories.html#jumpstarter"><b>ジャンプスターター</b><span>おすすめ/選び方</span></a>
-          <a class="item" href="categories.html#cable"><b>ブースターケーブル</b><span>使い方/注意点</span></a>
-          <a class="item" href="categories.html#battery"><b>バッテリー</b><span>寿命/点検</span></a>
-        </div>
-        <a class="btn" href="categories.html">カテゴリ一覧へ</a>
-
-        <div class="ads">
-          <b>AdSense差し込み口</b><br/>
-          ここにあなたの AdSense の「広告ユニットコード」を貼れば表示できます。<br/>
-          ※審査通過前は貼らない方が安全。
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>最新記事（例）</h2>
+        <h2>最新記事</h2>
         <div class="list">
           <a class="item" href="posts/jumpstarter-choose.html"><b>ジャンプスターターの選び方</b><span>保存版</span></a>
           <a class="item" href="posts/jumpstarter-top5.html"><b>おすすめTOP5</b><span>比較表つき</span></a>
