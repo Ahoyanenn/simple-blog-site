@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ページが見つかりません｜バッテリー上がり完全対策ガイド</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --txt:#e9ecff;
+      --muted:#a9b1da;
+      --line:rgba(255,255,255,.12);
+      --accent:#6ae4ff;
+      --accent2:#a78bfa;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif;
+      color:var(--txt);
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(106,228,255,.18), transparent 55%),
+        radial-gradient(700px 500px at 90% 10%, rgba(167,139,250,.18), transparent 55%),
+        linear-gradient(180deg, #070a14, var(--bg));
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      max-width:520px;
+      padding:24px;
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      text-align:center;
+    }
+    .ads{
+      margin-top:16px;
+      padding:12px;
+      border-radius:14px;
+      border:1px dashed rgba(255,255,255,.25);
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+      background:rgba(0,0,0,.10);
+    }
+    h1{margin:0 0 10px; font-size:24px}
+    p{margin:0 0 16px; color:var(--muted)}
+    a{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px;
+      border-radius:14px;
+      background:linear-gradient(135deg, rgba(106,228,255,.22), rgba(167,139,250,.22));
+      border:1px solid rgba(255,255,255,.18);
+      color:var(--txt);
+      text-decoration:none;
+      font-weight:700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>ページが見つかりませんでした</h1>
+    <p>リンクが変更されたか、ページが削除された可能性があります。</p>
+    <a href="index.html">トップページへ戻る</a>
+    <!-- ADSENSE: 404 -->
+    <div class="ads">広告枠（404ページ）</div>
+  </div>
+</body>
+</html>
