@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>カテゴリ一覧</title>
-<style>
-body{margin:0;background:#0f172a;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;}
-header{padding:20px;text-align:center;background:#111827;font-size:22px;font-weight:700;}
-.container{max-width:960px;margin:0 auto;padding:20px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px;}
-.card{background:#1e293b;border-radius:16px;padding:20px;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:transform .1s;}
-.card:hover{transform:translateY(-2px);}
-.card a{text-decoration:none;color:#38bdf8;font-weight:700;font-size:18px;}
-.card p{margin:4px 0 0;color:#94a3b8;font-size:14px;}
-footer{text-align:center;margin-top:40px;color:#94a3b8;font-size:12px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カテゴリ一覧 | 現場道具ラボ</title>
+  <meta name="description" content="安全靴、空調服、腰道具、暑さ対策グッズ、新築美装・清掃道具のカテゴリ一覧。">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>カテゴリ一覧</header>
-<div class="container">
-  <div class="grid">
-    <div class="card">
-      <a href="jumpstarter.html">ジャンプスターター</a>
-      <p>おすすめ・選び方</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="現場道具ラボ トップへ">
+        <span class="mark" aria-hidden="true">鐵</span>
+        <span>現場道具ラボ<small>FIELD TOOL REVIEW</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false">メニュー</button>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="categories.html" aria-current="page">カテゴリ</a>
+        <a href="safety-shoes.html">安全靴</a>
+        <a href="airwear.html">空調服</a>
+        <a href="waist-tools.html">腰道具</a>
+      </nav>
     </div>
-    <div class="card">
-      <a href="booster.html">ブースターケーブル</a>
-      <p>使い方・注意点</p>
+  </header>
+  <main>
+    <div class="container breadcrumb"><a href="index.html">トップ</a> / カテゴリ一覧</div>
+    <section class="article-hero"><div class="container"><span class="eyebrow">CATEGORY</span><h1>カテゴリ一覧</h1><p class="lead">現場道具ラボで扱うレビューカテゴリです。各ページにAmazon・楽天の商品リンクを差し込めるボタン枠を用意しています。</p></div></section>
+    <section class="section"><div class="container grid category-grid"><a class="card" href="safety-shoes.html"><div class="icon">👟</div><span class="tag">安全靴</span><h3>安全靴おすすめ</h3><p>滑りにくさ・クッション性・耐久性を重視した現場向け安全靴の選び方とおすすめ構成。</p></a><a class="card" href="airwear.html"><div class="icon">🌀</div><span class="tag">空調服</span><h3>空調服おすすめ</h3><p>真夏の現場で体力を残すための空調服・ファン・バッテリーの選び方。</p></a><a class="card" href="waist-tools.html"><div class="icon">🧰</div><span class="tag">腰道具</span><h3>腰道具おすすめ</h3><p>腰袋・工具差し・サポーターベルトを現場目線で整理。</p></a><a class="card" href="heat-goods.html"><div class="icon">☀️</div><span class="tag">暑さ対策</span><h3>暑さ対策グッズ</h3><p>熱中症対策に役立つ冷却ベスト・保冷剤・タオル・飲料周りの道具まとめ。</p></a><a class="card" href="cleaning-tools.html"><div class="icon">🧽</div><span class="tag">新築美装・清掃</span><h3>新築美装・清掃道具</h3><p>引き渡し前の仕上がりを上げる清掃道具・洗剤・スクレーパーの選び方。</p></a></div></section>
+    <section class="section"><div class="container ad-box"><h2>共通広告枠</h2><div class="ad-placeholder">カテゴリ横断のセール告知、Amazonタイムセール、楽天スーパーSALEなどのバナー設置に使えます。</div></div></section>
+  </main>
+  <button class="back-top" type="button" aria-label="ページ上部へ戻る">↑</button>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <strong>現場道具ラボ</strong>
+      <p>建設業・職人向けに、現場で使いやすい道具を比較・紹介するレビューサイトです。当サイトには広告・アフィリエイトリンクが含まれます。</p>
+      <div class="footer-links"><a href="index.html">トップ</a><a href="categories.html">カテゴリ一覧</a></div>
     </div>
-    <div class="card">
-      <a href="battery.html">バッテリー</a>
-      <p>寿命・点検</p>
-    </div>
-    <!-- 必要に応じてカードを追加してください -->
-  </div>
-</div>
-<footer>© 2026 Battery Guide</footer>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
