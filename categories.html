@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>カテゴリ一覧</title>
-<style>
-body{margin:0;background:#0f172a;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;}
-header{padding:20px;text-align:center;background:#111827;font-size:22px;font-weight:700;}
-.container{max-width:960px;margin:0 auto;padding:20px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px;}
-.card{background:#1e293b;border-radius:16px;padding:20px;box-shadow:0 0 6px rgba(0,0,0,0.3);transition:transform .1s;}
-.card:hover{transform:translateY(-2px);}
-.card a{text-decoration:none;color:#38bdf8;font-weight:700;font-size:18px;}
-.card p{margin:4px 0 0;color:#94a3b8;font-size:14px;}
-footer{text-align:center;margin-top:40px;color:#94a3b8;font-size:12px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鳶職向けランキングカテゴリ一覧 | 鳶職人が選ぶ道具ラボ</title>
+  <meta name="description" content="鳶職人向けに安全靴、作業着、空調服、腰道具・工具、ハーネス、手袋、防寒着・雨具のランキングカテゴリをまとめました。">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>カテゴリ一覧</header>
-<div class="container">
-  <div class="grid">
-    <div class="card">
-      <a href="jumpstarter.html">ジャンプスターター</a>
-      <p>おすすめ・選び方</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="鳶職人が選ぶ道具ラボ トップへ">
+        <span class="mark" aria-hidden="true">鳶</span>
+        <span>鳶職人が選ぶ道具ラボ<small>TOBI TOOL REVIEW</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false">メニュー</button>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="categories.html" aria-current="page">カテゴリ</a>
+        <a href="safety-shoes.html">安全靴</a>
+        <a href="workwear.html">作業着</a>
+        <a href="airwear.html">空調服</a>
+        <a href="waist-tools.html">腰道具</a>
+        <a href="harness.html">ハーネス</a>
+        <a href="gloves.html">手袋</a>
+        <a href="winter-rainwear.html">防寒着</a>
+      </nav>
     </div>
-    <div class="card">
-      <a href="booster.html">ブースターケーブル</a>
-      <p>使い方・注意点</p>
+  </header>
+  <main>
+    <div class="container breadcrumb"><a href="index.html">トップ</a> / カテゴリ一覧</div>
+    <section class="article-hero">
+      <div class="container">
+        <span class="eyebrow">TOBI RANKING CATEGORIES</span>
+        <h1>鳶職向けランキングカテゴリ一覧</h1>
+        <p class="lead">安全靴、作業着、腰道具・工具、空調服、ハーネス、手袋、防寒着・雨具を鳶職人の使い方に合わせて整理しました。</p>
+      </div>
+    </section>
+    <section class="section"><div class="container grid category-grid">
+          <a class="category-card" href="safety-shoes.html">
+            <span class="tag">RANKING</span>
+            <h3>安全靴ランキング</h3>
+            <p>足場上での踏ん張り、屈伸のしやすさ、ソールの減りにくさを鳶職人目線で比較します。</p>
+          </a>
+          <a class="category-card" href="workwear.html">
+            <span class="tag">RANKING</span>
+            <h3>作業着ランキング</h3>
+            <p>しゃがむ、登る、担ぐ動きが多い鳶職向けに、ストレッチ性・破れにくさ・見た目を整理します。</p>
+          </a>
+          <a class="category-card" href="airwear.html">
+            <span class="tag">RANKING</span>
+            <h3>空調服・暑さ対策ランキング</h3>
+            <p>炎天下の足場作業で体力を残しやすい空調服、冷却ベスト、保冷まわりの道具を比較します。</p>
+          </a>
+          <a class="category-card" href="waist-tools.html">
+            <span class="tag">RANKING</span>
+            <h3>腰道具・工具ランキング</h3>
+            <p>腰袋、工具差し、ラチェット差し、インパクトフック、スケール、ラチェット、シノ、カッター、インパクトドライバー、ビット、セフ系パーツまで腰回りをまとめて紹介します。</p>
+          </a>
+          <a class="category-card" href="harness.html">
+            <span class="tag">RANKING</span>
+            <h3>ハーネス・安全帯ランキング</h3>
+            <p>フルハーネス、ランヤード、胴ベルトまわりを、装着感・動きやすさ・現場ルールの確認ポイントで整理します。</p>
+          </a>
+          <a class="category-card" href="gloves.html">
+            <span class="tag">RANKING</span>
+            <h3>手袋・革手ランキング</h3>
+            <p>単管、クランプ、鉄骨、番線を扱う場面で、グリップ・厚み・指先の使いやすさを比較します。</p>
+          </a>
+          <a class="category-card" href="winter-rainwear.html">
+            <span class="tag">RANKING</span>
+            <h3>防寒着・雨具ランキング</h3>
+            <p>冬場の冷え、雨天時の濡れ、動きにくさを抑えたい鳶職人向けに防寒着と雨具を整理します。</p>
+          </a>
+    </div></section>
+    <section class="section"><div class="container notice">当サイトには広告・アフィリエイトリンクが含まれます。掲載している商品情報・価格・在庫状況は変更される場合があります。購入前に必ず販売ページの最新情報をご確認ください。</div></section>
+  </main>
+  <button class="back-top" type="button" aria-label="ページ上部へ戻る">↑</button>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <strong>鳶職人が選ぶ道具ラボ</strong>
+      <p>当サイトには広告・アフィリエイトリンクが含まれます。掲載している商品情報・価格・在庫状況は変更される場合があります。購入前に必ず販売ページの最新情報をご確認ください。</p>
+      <div class="footer-links">
+        <a href="index.html">トップ</a>
+        <a href="categories.html">カテゴリ一覧</a>
+        <a href="safety-shoes.html">安全靴ランキング</a>
+        <a href="waist-tools.html">腰道具・工具ランキング</a>
+      </div>
     </div>
-    <div class="card">
-      <a href="battery.html">バッテリー</a>
-      <p>寿命・点検</p>
-    </div>
-    <!-- 必要に応じてカードを追加してください -->
-  </div>
-</div>
-<footer>© 2026 Battery Guide</footer>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
