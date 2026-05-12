@@ -10,7 +10,7 @@ if (toggle && nav) {
 const backTop = document.querySelector('.back-top');
 if (backTop) {
   window.addEventListener('scroll', () => {
-    backTop.classList.toggle('is-visible', window.scrollY > 500);
+    backTop.classList.toggle('is-visible', window.scrollY > 520);
   });
   backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
